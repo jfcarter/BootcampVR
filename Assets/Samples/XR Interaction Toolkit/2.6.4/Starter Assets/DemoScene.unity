@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028301, g: 0.22571309, b: 0.30692127, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9089,7 +9089,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9155051865267704364}
-  m_Father: {fileID: 9014170785502690981}
+  m_Father: {fileID: 9014170785323426436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &509604627088906895
 MeshFilter:
@@ -12470,7 +12470,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 669338804194718407}
-  m_Father: {fileID: 9014170785502690981}
+  m_Father: {fileID: 9014170785323426436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5628056356765402376
 GameObject:
@@ -14151,7 +14151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9014170785502690981}
+  m_Father: {fileID: 9014170785323426436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7169631889424923033
 GameObject:
@@ -14468,6 +14468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7696548426158909433}
+  - component: {fileID: 7873184976584795772}
   - component: {fileID: 7873184976584795771}
   - component: {fileID: 3127728407058736461}
   - component: {fileID: 3127728407058736456}
@@ -14572,6 +14573,20 @@ MonoBehaviour:
   m_CameraFloorOffsetObject: {fileID: 9014170785323426437}
   m_RequestedTrackingOriginMode: 1
   m_CameraYOffset: 1.6
+--- !u!114 &7873184976584795772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696548426158909434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ade48bc3a96398469ff54c9f0b6fdc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 9014170785502690981}
+  movementProxy: {fileID: 9014170785323426436}
 --- !u!1 &8063056433851982097
 GameObject:
   m_ObjectHideFlags: 0
@@ -14899,7 +14914,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3459392257809823009}
-  m_Father: {fileID: 9014170785502690981}
+  m_Father: {fileID: 9014170785323426436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8599008251115684448
 MonoBehaviour:
@@ -15373,7 +15388,7 @@ Transform:
   - {fileID: 3701198751540665}
   - {fileID: 5243682147006866511}
   - {fileID: 9014170784879080146}
-  m_Father: {fileID: 9014170785502690981}
+  m_Father: {fileID: 9014170785323426436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9014170783845293784
 GameObject:
@@ -15836,6 +15851,12 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9014170785502690981}
+  - {fileID: 7161851848793728174}
+  - {fileID: 5548300561439207279}
+  - {fileID: 9014170783845293767}
+  - {fileID: 8424601472215846176}
+  - {fileID: 9014170785329995302}
+  - {fileID: 424857286834844560}
   m_Father: {fileID: 7696548426158909433}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9014170785323426437
@@ -16097,7 +16118,7 @@ Transform:
   - {fileID: 8223754799590888524}
   - {fileID: 5436722516459124932}
   - {fileID: 6694496368962475723}
-  m_Father: {fileID: 9014170785502690981}
+  m_Father: {fileID: 9014170785323426436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9014170785329995303
 GameObject:
@@ -16191,12 +16212,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7690080514260253361}
-  - {fileID: 7161851848793728174}
-  - {fileID: 5548300561439207279}
-  - {fileID: 9014170783845293767}
-  - {fileID: 8424601472215846176}
-  - {fileID: 9014170785329995302}
-  - {fileID: 424857286834844560}
   m_Father: {fileID: 9014170785323426436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9014170785502690982
