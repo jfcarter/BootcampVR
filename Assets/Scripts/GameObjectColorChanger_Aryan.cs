@@ -1,15 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.XR.Interaction.Toolkit;
 public class GameObjectColorChanger_Aryan : MonoBehaviour
 {
     public GameObject obj;
+    public XRGrabInteractable XRGrabInteractable;
     // Awake runs once at the beginning play (only once)
     private void Awake()
     {
         Debug.Log("Awake");
+        XRGrabInteractable.selectEntered.AddListener(OnGrab);
+        XRGrabInteractable.selectExited.AddListener(OnRelease);
+        
 
+    }
+    public void showNumber(int num)
+    {
+        Debug.Log(num);
+    }
+    public void OnGrab(SelectEnterEventArgs args)
+    {
+        Debug.Log("On grabbed");
+    }
+    public void OnRelease(SelectExitEventArgs args)
+    {
+        Debug.Log("On grabbed");
     }
     // Start is called before the first frame update
     void Start()
