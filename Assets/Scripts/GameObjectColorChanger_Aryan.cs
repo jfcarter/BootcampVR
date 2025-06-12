@@ -10,7 +10,9 @@ public class GameObjectColorChanger_Aryan : MonoBehaviour
     private void Awake()
     {
         Debug.Log("Awake");
+        //On Grab
         XRGrabInteractable.selectEntered.AddListener(OnGrab);
+        //On Release
         XRGrabInteractable.selectExited.AddListener(OnRelease);
         
 
