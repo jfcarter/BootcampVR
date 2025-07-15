@@ -1,16 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameObjectColorChanger_Felix : MonoBehaviour
 {
     public GameObject obj;
+    public XRGrabInteractable xrGrabIteractable;
 
     // Runs once at the beginning of play (only once)
     private void Awake()
     {
         Debug.Log("Awake");
+        xrGrabIteractable.selectEntered.AddListener(OnGrab);
+        xrGrabIteractable.selectExited.AddListener(OnRelease);
     }
+
+    public void OnGrab(SelectEnterEventArgs args)
+    {
+        Debug.Log("On grabbed");
+    }
+
+    public void OnRelease(SelectExitEventArgs args)
+    {
+        Debug.Log("On released");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
